@@ -39,3 +39,11 @@ console.log(rabit.callBackFunction2());
 //so "this" is = to fucntionName.call(objec, arg)
 callBackFunction.call(hungryRabit, "clinging");
 callBackFunction2.call(rabit);
+
+//we can pass the whole object in a function.call methd
+function normalize() {
+  //here this refers to the coords object
+  console.log(this.coords.map((n) => n / this.length));
+}
+
+console.log(normalize.call({ coords: [1, 2, 3, 4], length: 5 }));
