@@ -1,3 +1,5 @@
+//methd fucntion in objec expression
+// the property key speak with its value a function saySomthing()
 let rabit = {};
 rabit.speak = function saySomething(line) {
   console.log(`Rabit is saying that it is ${line}`);
